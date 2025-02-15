@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <header class="navbar">
+    
+    <div class="logo" style="display: flex; align-items: center;">
+        <img src="git.png" width="22" height="22" style="filter: invert(100%);" alt=""> 
+        <span style="margin-left: 8px;">GitHub</span>
+      </div>
+    <nav>
+    <ul>
+        <li>
+            <div class="search-container">
+                <input 
+                      type="text" 
+                      class="search-bar" 
+                      placeholder="Search GitHub"
+                      aria-label="Search GitHub">
+                <button class="search-button"><img src="search.png" width="16" height="16" alt="" srcset=""></button>
+        </li>
+   
+    
+        <li><a href="#">Pull Requests</a></li>
+        <li><a href="#">Issues</a></li>
+        <li><a href="#">Marketplace</a></li>
+        <li><a href="#">Explore</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="tabs">
+
+    <button class="tab-btn active" data-tab="overview">Overview</button>
+    <button class="tab-btn" data-tab="repositories">Repositories</button>
+    <button class="tab-btn" data-tab="projects">Projects</button>
+    <button class="tab-btn" data-tab="packages">Packages</button>
+    <button class="tab-btn" data-tab="stars">Stars</button>
+  </div>
+  <div class="tab-content">
+    <section id="overview" class="tab-panel active">
+      <h2>Overview</h2>
+      <p>Welcome to the GitHub clone. This section shows a user's profile details and activity overview.</p>
+    </section>
+
+    <section id="repositories" class="tab-panel">
+        <div class="repo-list">
+            <h2>Repositories</h2>
+            <ul>
+              <li>
+                <a href="#">
+                  <h3>Repo Name</h3>
+                  <p>Repo description goes here.</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <h3>Another Repo</h3>
+                  <p>Another repo description here.</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+    </section>
+
+    <section id="projects" class="tab-panel">
+      <h2>Projects</h2>
+      <p>List of projects will go here.</p>
+    </section>
+
+    <section id="packages" class="tab-panel">
+      <h2>Packages</h2>
+      <p>Information about packages will go here.</p>
+    </section>
+
+    <section id="stars" class="tab-panel">
+      <h2>Stars</h2>
+      <p>Starred repositories will be displayed here.</p>
+    </section>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2024 GitHub Clone. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
